@@ -2,6 +2,7 @@
 
 echo "Starting Site Update"
 
+hugo -t archie
 cd public
 git add .
 git commit -m "update blog"

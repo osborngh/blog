@@ -7,6 +7,7 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 paginate = 4
+googleAnalytics = "G-YE1LQE1TDC"
 
 [params]
 favicon = "https://img.icons8.com/officel/16/000000/chevron-right.png"
@@ -28,7 +29,7 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "All posts"
+name = "All Posts"
 url = "/posts"
 weight = 2
 
@@ -40,4 +41,4 @@ weight = 3
 [[menu.main]]
 name = "Tags"
 url = "/tags"
-weight = 4``
+weight = 4
