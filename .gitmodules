@@ -1,0 +1,4 @@
+[submodule "gh_blog/public"]
+	path = gh_blog/public
+	url = https://github.com/osborngh/osborngh.github.io.git
+	branch = main
