@@ -26,9 +26,11 @@
 		<div class="prev-post">
 			{{ if ne .Type "page" }}
 			{{ if .PrevPage }}
+			{{ if ne .PrevPage.Title "About" }}
 			<a href="{{ .PrevPage.Permalink }}">
-				←{{ .PrevPage.Title }}
+				← {{ .PrevPage.Title }}
 			</a>
+			{{ end }}
 			{{ end }}
 			{{ end }}
 		</div>
@@ -36,9 +38,11 @@
 		<div class="next-post">
 			{{ if ne .Type "page" }}
 			{{ if .NextPage }}
+			{{ if ne .NextPage.Title "About" }}
 			<a href="{{ .NextPage.Permalink }}">
-				{{ .NextPage.Title }}→
+				{{ .NextPage.Title }} →
 			</a>
+			{{ end }}
 			{{ end }}
 			{{ end }}
 		</div>

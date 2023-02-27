@@ -1,7 +1,7 @@
 ---
 title: "A Deeper Dive Into Python - zip()"
 date: 2023-02-26T00:52:03Z
-tags: ["python", "deeper-dive-python", "zip"]
+tags: ["python", "deeper-dive-python", "zip", "computer-science", "programming"]
 description: "Deeper Dive: Python - zip() function"
 ---
 
@@ -94,7 +94,9 @@ for (number, double) in zip(numbers, doubles):
 
 The zip() function is *lazy*. This simply means that when you call the zip() function, the elements will not be processed until the iterator is used, that is, it is wrapped in a concrete sequence type or it is iterated on by a for loop.
 
-So far all the lists we have "zipped" together have been of equal lengths, so what happens when the iterables, that is list or set, do not have equivalent lengths. The Python documentation states three approaches to this issue.
+So far all the lists we have "zipped" together have been of equal lengths, so what happens when the iterables, that is list or set, do not have equivalent lengths.
+
+The Python documentation states three approaches to this issue;
 
 1. The zip() ignores other iterables immediately the shortest is exhausted, limiting the length of the result to the smallest sequence.
 
@@ -107,7 +109,7 @@ print(res)
 # [(1, 4), (2, 5), (3, 6)]
 ```
 
-2. Padding with a constant value (None) to make all iterables have equal length.
+2. Padding with a constant value (None) to make all iterables have equal length. In this case, itertools.zip_longest() is used instead of zip().
 
 ```python
 import itertools
