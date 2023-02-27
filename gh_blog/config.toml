@@ -31,11 +31,6 @@ name = "GitHub"
 icon = "github"
 url = "https://github.com/osborngh"
 
-[[params.social]]
-name = "email"
-icon = "email"
-url = "mailto:osbornghdev@gmail.com"
-
 [[menu.main]]
 name = "Home"
 url = "/"
