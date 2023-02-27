@@ -115,7 +115,6 @@ second = [1, 2, 3]
 res = itertools.zip_longest(first, second)
 print(list(res))
 # [("F", 1), ("S", 2), ("T", 3), ("F", None)]
-
 ```
 
 3. Enabling *strict* mode to raise a ValueError when the lengths of iterables being "zipped" are not the same.
@@ -126,7 +125,6 @@ res = list(zip(range(3), range(4, 10), strict=True))
 print(res)
 
 # ValueError: zip() argument 2 is longer than argument 1
-
 ```
 
 The zip() function returns an empty iterator if called with no arguments and returns a 1-tuple iterator if its called with only one iterable.
