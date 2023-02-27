@@ -1,27 +1,40 @@
-baseURL = "https://osborngh.github.io/"
+baseURL = "/"
+relativeURLS = true
 languageCode = "en-us"
 title = "The Codex Arunel"
 theme = "archie"
 copyright = "© Da Vinci"
+
 pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 paginate = 4
 googleAnalytics = "G-YE1LQE1TDC"
 
+[author]
+name = "Osborn Ghampson"
+
 [params]
+customCSS = []
 favicon = "https://img.icons8.com/officel/16/000000/chevron-right.png"
 og_image = "https://raw.githubusercontent.com/athul/archie/master/images/archie-dark.png"
 # mode = "auto"
 mode = "toggle"
 useCDN = true
-subtitle = "Computer Science, Physics and Electronics"
-description = "A Generalist's Blog"
+subtitle = "# __Computer Science, Physics and Electronics__"
+description = "The Generalist's Blog"
+code_copy_button = true
+relatedPosts = false
 
 [[params.social]]
 name = "GitHub"
 icon = "github"
 url = "https://github.com/osborngh"
+
+[[params.social]]
+name = "email"
+icon = "email"
+url = "mailto:osbornghdev@gmail.com"
 
 [[menu.main]]
 name = "Home"

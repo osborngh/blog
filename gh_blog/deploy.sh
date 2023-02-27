@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e"\033[0;32mDeploying Updates To Github...\033[0m"
+echo "Deploying Updates To Github..."
 
 # Build the project
 hugo -t archie
@@ -11,7 +11,7 @@ cd public
 # Add changes to git
 git add .
 
-msg = "updating site `date`"
+msg="updating site `date`"
 
 if [ $# -eq 1 ]
 	then msg="$1"
@@ -23,4 +23,4 @@ git push origin main
 
 cd ..
 
-echo "Site Updated Successfully"
+echo "Site Updated Successfully..."

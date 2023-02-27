@@ -1,0 +1,61 @@
+{{ define "main" }}
+<main>
+	<article>
+		<div class="title">
+			<h1 class="title">{{ .Title }}</h1>
+			<div class="meta">Posted on {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}
+				<span>
+					{{ if eq .ReadingTime 1 }}
+						- {{ .ReadingTime }} minute read
+					{{ else }}
+						- {{ .ReadingTime }} minutes read
+					{{ end }}
+				</span>
+			</div>
+		</div>
+		{{ if isset .Params "tldr" }}
+		<div class="tldr">
+			<strong>tl;dr:</strong>
+			{{ .Params.tldr }}
+		</div>{{ end }}
+
+		<section class="body">
+			{{ .Content }}
+		</section>
+
+		<div class="prev-post">
+			{{ if ne .Type "page" }}
+			{{ if .PrevPage }}
+			<a href="{{ .PrevPage.Permalink }}">
+				←{{ .PrevPage.Title }}
+			</a>
+			{{ end }}
+			{{ end }}
+		</div>
+
+		<div class="next-post">
+			{{ if ne .Type "page" }}
+			{{ if .NextPage }}
+			<a href="{{ .NextPage.Permalink }}">
+				{{ .NextPage.Title }}→
+			</a>
+			{{ end }}
+			{{ end }}
+		</div>
+
+		<div class="post-tags">
+			{{ if ne .Type "page" }}
+			{{ if gt .Params.tags 0 }}
+			<nav class="nav tags">
+				<ul class="tags">
+					{{ range .Params.tags }}
+					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+					{{ end }}
+				</ul>
+			</nav>
+			{{ end }}
+			{{ end }}
+		</div>
+	</article>
+</main>
+{{ end }}
