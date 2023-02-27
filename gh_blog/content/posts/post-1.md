@@ -45,12 +45,15 @@ We created two lists; `names` and `ages`.
 
 We then called the zip() function with _names_ and _ages_ as arguments and stored the result in a variable named as such. 
 
+
 From what we have established, the output should look like this;
 `[("Alice", 13), ("Bob", 14), ("Sandra, 30"), ("Theo", 31)]`,
 since the zip() function puts **each** first member into one list, the second member into another list.
+
 Running this code gives another result though; `result` looks something like `<zip object at 0x7604ff7c82ad`.
 It's a *memory address*, and is what Python returns when the zip function is invoked in this manner.
 This memory address actually points to the iterator containing the tuples. An iterator is actually not a concrete structure like *list* or *set* and as a result does not show the data it contains.
+
 We can easily obtain the zipped data by wrapping the iterator in a concrete object.
 
 ```python
