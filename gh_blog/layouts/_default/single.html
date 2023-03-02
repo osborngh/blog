@@ -5,7 +5,7 @@
 			<h1 class="title">{{ .Title }}</h1>
 			<div class="meta">Posted on {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}
 				<span>
-					{{ if eq .ReadingTime 1 }}
+					{{ if lt .ReadingTime 1 }}
 						- {{ .ReadingTime }} minute read
 					{{ else }}
 						- {{ .ReadingTime }} minutes read
@@ -24,26 +24,18 @@
 		</section>
 
 		<div class="prev-post">
-			{{ if ne .Type "page" }}
-			{{ if .PrevPage }}
-			{{ if ne .PrevPage.Title "About" }}
-			<a href="{{ .PrevPage.Permalink }}">
-				← {{ .PrevPage.Title }}
+			{{ if .Prev }}
+			<a href="{{ .Prev.Permalink }}">
+				← {{ .Prev.Title }}
 			</a>
-			{{ end }}
-			{{ end }}
 			{{ end }}
 		</div>
 
 		<div class="next-post">
-			{{ if ne .Type "page" }}
-			{{ if .NextPage }}
-			{{ if ne .NextPage.Title "About" }}
+			{{ if .Next }}
 			<a href="{{ .NextPage.Permalink }}">
-				{{ .NextPage.Title }} →
+				{{ .Next.Title }} →
 			</a>
-			{{ end }}
-			{{ end }}
 			{{ end }}
 		</div>
 

@@ -1,8 +1,8 @@
 ---
-title: "A Deeper Dive Into Python - zip()"
+title: "A Deep Dive Into Python - zip()"
 date: 2023-02-26T00:52:03Z
-tags: ["python", "deeper-dive-python", "zip", "computer-science", "programming"]
-description: "Deeper Dive: Python - zip() function"
+tags: ["python", "deep-dive-python", "computer-science"]
+description: "Deep Dive: Python - zip() function"
 ---
 
 # Table Of Contents

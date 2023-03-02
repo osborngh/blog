@@ -22,9 +22,10 @@ og_image = "https://raw.githubusercontent.com/athul/archie/master/images/archie-
 mode = "toggle"
 useCDN = true
 subtitle = "# __Computer Science, Physics and Electronics__"
-description = "The Generalist's Blog"
+description = "A Blog"
 code_copy_button = true
 relatedPosts = false
+katex = true
 
 [[params.social]]
 name = "GitHub"
