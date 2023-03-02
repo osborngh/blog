@@ -1,7 +1,7 @@
 baseURL = "/"
 relativeURLS = true
 languageCode = "en-us"
-title = "The Codex Arunel"
+title = "The Codex Arundel"
 theme = "archie"
 copyright = "© Da Vinci"
 
