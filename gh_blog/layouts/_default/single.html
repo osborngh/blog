@@ -23,22 +23,6 @@
 			{{ .Content }}
 		</section>
 
-		<div class="prev-post">
-			{{ if .Prev }}
-			<a href="{{ .Prev.Permalink }}">
-				← {{ .Prev.Title }}
-			</a>
-			{{ end }}
-		</div>
-
-		<div class="next-post">
-			{{ if .Next }}
-			<a href="{{ .NextPage.Permalink }}">
-				{{ .Next.Title }} →
-			</a>
-			{{ end }}
-		</div>
-
 		<div class="post-tags">
 			{{ if ne .Type "page" }}
 			{{ if gt .Params.tags 0 }}
