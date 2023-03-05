@@ -27,6 +27,9 @@ code_copy_button = true
 relatedPosts = false
 katex = true
 
+[taxonomies]
+series = "series"
+
 [[params.social]]
 name = "GitHub"
 icon = "github"
@@ -51,3 +54,8 @@ weight = 3
 name = "Tags"
 url = "/tags"
 weight = 4
+
+[[menu.main]]
+name = "Support"
+url = "https://www.paypal.me/davincigh"
+weight = 5

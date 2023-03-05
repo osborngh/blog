@@ -2,17 +2,8 @@
 title: "A Deep Dive Into Python - zip()"
 date: 2023-02-26T00:52:03Z
 tags: ["python", "deep-dive-python", "computer-science"]
-description: "Deep Dive: Python - zip() function"
+description: "A not so surface view into the Python zip() function"
 ---
-
-# Table Of Contents
-
-- [Introduction](#introduction)
-- [Declaration](#declaration)
-- [Basics](#basics)
-- [Details](#details)
-- [Conclusion](#conclusion)
-- [Resources](#resources)
 
 ## Introduction
 
@@ -90,7 +81,7 @@ for (number, double) in zip(numbers, doubles):
 # Double of 3 is 6
 ```
 
-## Details
+## More Information
 
 The zip() function is *lazy*. This simply means that when you call the zip() function, the elements will not be processed until the iterator is used, that is, it is wrapped in a concrete sequence type or it is iterated on by a for loop.
 
