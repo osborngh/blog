@@ -5,7 +5,7 @@
 			<h1 class="title">{{ .Title }}</h1>
 			<div class="meta">Posted on {{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}
 				<span>
-					{{ if lt .ReadingTime 1 }}
+					{{ if eq .ReadingTime 1 }}
 						- {{ .ReadingTime }} minute read
 					{{ else }}
 						- {{ .ReadingTime }} minutes read

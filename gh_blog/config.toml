@@ -21,7 +21,7 @@ og_image = "https://raw.githubusercontent.com/athul/archie/master/images/archie-
 # mode = "auto"
 mode = "toggle"
 useCDN = true
-subtitle = "# __Computer Science, Physics and Electronics__"
+subtitle = "# __Computer Science, Physics, Electronics and Others__"
 description = "A Blog"
 code_copy_button = true
 relatedPosts = false
@@ -29,11 +29,17 @@ katex = true
 
 [taxonomies]
 series = "series"
+tags = "tags"
 
 [[params.social]]
 name = "GitHub"
 icon = "github"
 url = "https://github.com/osborngh"
+
+[[params.social]]
+name = "Gmail"
+icon = "mail"
+url = "mailto:osbornghdev@gmail.com"
 
 [[menu.main]]
 name = "Home"

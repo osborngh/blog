@@ -1,8 +1,8 @@
 ---
 title: "A Deep Dive Into Python - zip()"
 date: 2023-02-26T00:52:03Z
-tags: ["python", "deep-dive-python", "computer-science"]
-description: "A not so surface view into the Python zip() function"
+tags: ["computer-science", "python", "deep-dive-python", "language-functions"]
+description: "A not so surface view of the Python zip() function."
 ---
 
 ## Introduction
