@@ -2,7 +2,7 @@
 title: "Speeding Up Rust With Mold"
 date: 2023-03-05T00:52:41Z
 author: "Da Vinci"
-tags: [computer-science", "rust", "compilers"]
+tags: ["computer-science", "rust", "compilers"]
 description: "Improving Rust Build Times With Mold, The Magical Linker."
 ---
 
@@ -127,12 +127,16 @@ We'll be comparing the link speeds of  __Mold__, __GNU ld__ and another well kno
 To increase the workload of the linker, we'll be using an external dependency. I decided to go with the [Bevy](www.bevyengine.org) library.
 It's quite popular in the Rust community and is relatively easy to get started with.
 
+The code we're going to be using for benchmarking. It's not really necessary that we write any code, since the external libraries themselves have to be linked to the project.
+
 ```rust
 ```
 
-__Results__
+__Benchmark Results__
 
-1. __Mold__ => 
+I'm on a relatively low powered Chromebook running on Chrome OS, CPU architecture aarch64, with the linux subsystem enabled.
+
+1. __Mold__ =>
 
 2. __GNU ld__ =>
 
