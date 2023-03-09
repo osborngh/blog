@@ -12,7 +12,6 @@ description: "Improving Rust Build Times With Mold, The Magical Linker."
 
 [Rust](https://www.rust-lang.org) is an incredible language. It's quite obvious when it was, as at 2022 was the most loved programming language for seven years,
 according to a [survey](https://survey.stackoverflow.co/2022/#section-most-loved-dreaded-and-wanted-programming-scripting-and-markup-languages) made by [Stack Overflow](https://stackoverflow.com).
-
 Guaranteeing memory-safety and thread-safety without even having a runtime or garbage collector.
 Rust again provides us with a very smart compiler, top-notch tooling whilst being blazingly fast and highly memory-efficient.
 
@@ -54,7 +53,7 @@ sudo apt-get install mold
 
 If you could not install __Mold__ from your package manager, congratulations, you are only left with one option, building from source.
 
-__Building From Source__
+## Building From Source
 
 __Requirements__
 1. C++ 20 Compiler
@@ -132,9 +131,9 @@ The code we're going to be using for benchmarking. It's not really necessary tha
 ```rust
 ```
 
-__Benchmark Results__
+__Results__
 
-I'm on a relatively low powered Chromebook running on Chrome OS, CPU architecture aarch64, with the linux subsystem enabled.
+I'm on a relatively low powered Chromebook running on Chrome OS, with an `aarch64` CPU based architecture and the linux subsystem enabled. The gains will probably be greater on more power-packed systems.
 
 1. __Mold__ =>
 
