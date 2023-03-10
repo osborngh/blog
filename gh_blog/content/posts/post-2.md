@@ -119,43 +119,6 @@ RUSTFLAGS=-Clinker=/usr/bin/mold rustc --crate-type=lib lib.rs
 
 Note: if you got errors with the steps above, try replacing the `/usr/bin/mold` with the location of the __Mold__ binary you built earlier.
 
-## Benchmarking Mold
-
-The __Mold__ homepage has benchmarks which clearly depict how __Mold__ outperforms its competitors by a large margin. Let's see how it works for our _usually_ relatively smaller projects.
-
-We'll be comparing the link speeds of  __Mold__, __GNU ld__ and another well known linker, __Clang lld__.
-
-To increase the workload of the linker, we'll be using an external dependency. I decided to go with the [Bevy](www.bevyengine.org) library.
-It's quite popular in the Rust community and is relatively easy to get started with.
-
-We are not going to be writing any code since adding external dependencies contributes to the linker's workload.
-
-__Results__
-
-The test machine is a relatively low powered 64-bit Ubuntu laptop with 4gb of RAM with 4 processor cores.
-
-1. __Mold__
-```bash
-cargo build
-
-# 
-```
-
-2. __GNU ld__
-```bash
-cargo build
-
-# 
-```
-
-3. __Clang lld__
-```bash
-cargo build
-
-# 
-```
-
-
 ## Conclusion
 
-The speed __Mold__ offers increases with increasing dependencies so is observed in larger projects. Using a faster linker with Rust can improve the software development cycle.
+The speed __Mold__ offers increases with increasing dependencies so is observed in larger projects. Using a faster linker with Rust can improve the software development cycle. Dont forget to checkout the [Mold](https://www.github.com/rui314/mold) project repo for more info, including benchmarks and usage information.
