@@ -79,7 +79,7 @@ When the process is done you should have a __Mold__ installation. Add it to your
 
 __With Cargo__
 
-Now to use __Mold__ with cargo, Rust's multipurpose tool, first create a rust project or open an existing one which you would want to use __Mold__ as the project linker.
+Now to use __Mold__ with cargo, Rust's multipurpose tool, first create a rust project or open an existing one in which you would want to use __Mold__ as the project linker.
 
 ```bash
 cargo new using_mold
@@ -121,25 +121,39 @@ Note: if you got errors with the steps above, try replacing the `/usr/bin/mold` 
 
 ## Benchmarking Mold
 
+The __Mold__ homepage has benchmarks which clearly depict how __Mold__ outperforms its competitors by a large margin. Let's see how it works for our _usually_ relatively smaller projects.
+
 We'll be comparing the link speeds of  __Mold__, __GNU ld__ and another well known linker, __Clang lld__.
 
 To increase the workload of the linker, we'll be using an external dependency. I decided to go with the [Bevy](www.bevyengine.org) library.
 It's quite popular in the Rust community and is relatively easy to get started with.
 
-The code we're going to be using for benchmarking. It's not really necessary that we write any code, since the external libraries themselves have to be linked to the project.
-
-```rust
-```
+We are not going to be writing any code since adding external dependencies contributes to the linker's workload.
 
 __Results__
 
-I'm on a relatively low powered Chromebook running on Chrome OS, with an `aarch64` CPU based architecture and the linux subsystem enabled. The gains will probably be greater on more power-packed systems.
+The test machine is a relatively low powered 64-bit Ubuntu laptop with 4gb of RAM with 4 processor cores.
 
-1. __Mold__ =>
+1. __Mold__
+```bash
+cargo build
 
-2. __GNU ld__ =>
+# 
+```
 
-3. __Clang lld__ =>
+2. __GNU ld__
+```bash
+cargo build
+
+# 
+```
+
+3. __Clang lld__
+```bash
+cargo build
+
+# 
+```
 
 
 ## Conclusion

@@ -1,13 +1,13 @@
 ---
-title: "A Deep Dive Into Python - zip()"
+title: "A Deeper Look At The `zip()` function"
 date: 2023-02-26T00:52:03Z
-tags: ["computer-science", "python", "deep-dive-python", "language-functions"]
+tags: ["computer-science", "python", "language-functions"]
 description: "A not so surface view of the Python zip() function."
 ---
 
 ## Introduction
 
-The zip() function in Python takes an input of two or more of the basic collections in Python; the *list*, *set*, *tuple* and *dict*.
+The __zip()__ function in Python takes an input of two or more of the basic collections in Python; the *list*, *set*, *tuple* and *dict*.
 It returns an iterator (sequence) of tuples, where the first tuple contains the first elements of all the inputs, the second contains the second elements and so on.
 
 We'll see how to use the Python zip() function in this article.
@@ -100,7 +100,7 @@ print(res)
 # [(1, 4), (2, 5), (3, 6)]
 ```
 
-2. Padding with a constant value (None) to make all iterables have equal length. In this case, itertools.zip_longest() is used instead of zip().
+2. Padding with a constant value (None) to make all iterables have equal length. In this case, `zip_longest()` from the `itertools` modules is used instead of zip().
 
 ```python
 import itertools
