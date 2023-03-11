@@ -1,5 +1,5 @@
 ---
-title: "Intro To Computer Graphics Maths"
+title: "Computer Graphics Maths: Introduction"
 date: 2023-03-11T12:41:25Z
 author: "Da Vinci"
 tags: ["computer-graphics", "math", "linear-algebra", "programming", "python"]
@@ -23,7 +23,7 @@ Also this series, we are also going to be implementing our own Math library, __C
 
 The source code is available on [github](https://www.github.com/osborngh). Each topic of the series has a dedicated branch which has only features implemented up to that point in it.
 
-If you don't understand the immediate above sentence, you should probably checkout the series of articles at [Atlassian](https://www.atlassian.com/git/tutorials). Just start with the beginner section on the site but avoid any `Bitbucket` stuff you see on the site for now.
+If you don't understand what 'branch' or even 'github' is, you should probably checkout the series of articles at [Atlassian](https://www.atlassian.com/git/tutorials). Just start with the beginner section on the site but avoid any `Bitbucket` stuff you see on the site for now.
 
 # Topics Of The Series
 
@@ -48,7 +48,7 @@ If you are Math savvy and would want to go more in depth on the Mathematical Sid
 Good Websites for Learning:
 
 1. [OpenGL](https://www.learnopengl.com)
-2. [Vulkan](https://vulkan.org)
+2. [Vulkan](https://vulkan-tutorial.org)
 3. [DirectX](https://directxtutorial.com)
 
 Disclaimer: I haven't really used DirectX, but the articles look pretty good.
